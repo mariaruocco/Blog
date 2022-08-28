@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import * as React from 'react'
 import * as types from '../lib/types'
+<script async src="https://cdn.splitbee.io/sb.js"></script>
+
 
 export const CustomFont: React.FC<{ site: types.Site }> = ({ site }) => {
   if (!site.fontFamily) {
