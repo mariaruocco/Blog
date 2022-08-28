@@ -32,7 +32,7 @@ export const Footer: React.FC<{
         <a
           className={styles.linkedin}
           href={`https://www.mariaruocco.com`}
-          title={`Borja Soler | Website`}
+          title={`Maria Ruocco | Website`}
         >
           <FaHome />
         </a>
@@ -40,7 +40,7 @@ export const Footer: React.FC<{
       <Tippy content='About me'>
         <a
           className={styles.linkedin}
-          href={`https://www.mariaruocco.com/about`}
+          href={`https://www.mariaruocco.com/about-me`}
           title={`About me`}
         >
           <FaUserAstronaut />
