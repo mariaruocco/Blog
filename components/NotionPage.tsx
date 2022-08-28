@@ -1,5 +1,5 @@
 import * as React from 'react'
-import Head from 'next/head' <script async src="https://cdn.splitbee.io/sb.js"></script>
+import Head from 'next/head' 
 
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
