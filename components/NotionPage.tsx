@@ -1,5 +1,6 @@
 import * as React from 'react'
-import Head from 'next/head'
+import Head from 'next/head' 
+
 import Link from 'next/link'
 import dynamic from 'next/dynamic'
 import cs from 'classnames'
