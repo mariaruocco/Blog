@@ -7,6 +7,7 @@ import * as types from 'lib/types'
 export const PageHead: React.FC<types.PageProps> = ({ site }) => {
   return (
     <Head>
+      <script async src="https://cdn.splitbee.io/sb.js"></script>
       <meta charSet='utf-8' />
       <meta httpEquiv='Content-Type' content='text/html; charset=utf-8' />
       <meta
