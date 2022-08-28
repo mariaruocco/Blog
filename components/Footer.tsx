@@ -1,7 +1,9 @@
 import * as React from 'react'
-import { FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaBookmark, FaHome, FaUserAstronaut } from 'react-icons/fa'
 import { IoSunnyOutline, IoMoonSharp } from 'react-icons/io5'
-import * as config from 'lib/config'
+
+import Tippy from '@tippyjs/react'
+import 'tippy.js/dist/tippy.css'
 
 import styles from './styles.module.css'
 
@@ -24,9 +26,36 @@ export const Footer: React.FC<{
     setHasMounted(true)
   }, [])
 
- return (
+  return (
     <footer className={styles.footer}>
-      <div className={styles.copyright}> </div>
+      <Tippy content='Home'>
+        <a
+          className={styles.linkedin}
+          href={`https://www.mariaruocco.com`}
+          title={`Borja Soler | Website`}
+        >
+          <FaHome />
+        </a>
+      </Tippy>
+      <Tippy content='About me'>
+        <a
+          className={styles.linkedin}
+          href={`https://www.mariaruocco.com/about`}
+          title={`About me`}
+        >
+          <FaUserAstronaut />
+        </a>
+      </Tippy>
+      <Tippy content='Bookmarks'>
+        <a
+          className={styles.linkedin}
+          href={`https://www.mariaruocco.com/bookmarks`}
+          title={`Bookmarks`}
+        >
+          <FaBookmark />
+        </a>
+      </Tippy>
+      <hr className='vertical-bar' />
 
       {hasMounted ? (
         <div className={styles.settings}>
@@ -39,32 +68,6 @@ export const Footer: React.FC<{
           </a>
         </div>
       ) : null}
-
-      <div className={styles.social}>
-        {config.twitter && (
-          <a
-            className={styles.twitter}
-            href={`https://twitter.com/maria_ruocco_{config.twitter}`}
-            title={`Twitter @${config.twitter}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaTwitter />
-          </a>
-        )}
-
-        {config.linkedin && (
-          <a
-            className={styles.linkedin}
-            href={`https://www.linkedin.com/in/ruocco-maria/{config.linkedin}`}
-            title={`LinkedIn ${config.author}`}
-            target='_blank'
-            rel='noopener noreferrer'
-          >
-            <FaLinkedin />
-          </a>
-        )}
-      </div>
     </footer>
   )
 }
