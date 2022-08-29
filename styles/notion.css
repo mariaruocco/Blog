@@ -8,7 +8,7 @@
  */
 
 .notion {
-  --notion-max-width: 720px;
+  --notion-max-width: 800px;
   --notion-header-height: 54px;
 }
 
@@ -18,7 +18,9 @@
 }
 
 .index-page {
-  --notion-max-width: 900px;
+  --notion-max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .notion-text {
@@ -42,8 +44,10 @@
 /* Fix embedded video's size overflows its container --> */
 
 .notion-header .nav-header {
-  max-width: 1100px;
+  max-width: 800px;
+  height: 64px;
   margin: 0 auto;
+  background-color: transparent;
 }
 
 .notion-gallery-grid {
