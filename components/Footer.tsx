@@ -1,5 +1,11 @@
 import * as React from 'react'
-import { FaBookmark, FaHome, FaUserAstronaut, FaTelegramPlane } from 'react-icons/fa'
+import {
+  FaBookmark,
+  FaHome,
+  FaUserAstronaut,
+  FaTelegramPlane,
+  FaPencilAlt
+} from 'react-icons/fa'
 import { IoSunnyOutline, IoMoonSharp } from 'react-icons/io5'
 
 import Tippy from '@tippyjs/react'
@@ -35,6 +41,15 @@ export const Footer: React.FC<{
           title={`Maria Ruocco | Website`}
         >
           <FaHome />
+        </a>
+      </Tippy>
+      <Tippy content='Blog'>
+        <a
+          className={styles.linkedin}
+          href={`https://www.mariaruocco.com/blog`}
+          title={`Blog`}
+        >
+          <FaPencilAlt />
         </a>
       </Tippy>
       <Tippy content='About me'>
